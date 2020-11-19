@@ -1,0 +1,15 @@
+.card{
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.cards-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.fas{
+  margin: 0 5px;
+}

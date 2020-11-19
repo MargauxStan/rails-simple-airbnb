@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>All our Flats</h1>
+  <div class="cards-grid">
+    <% @flats.each do |flat| %>
+      <div class="card bg-light d-flex flex-direction: column justify-content-between">
+        <div>
+          <h4><%= flat.name %></h4>
+          <p><%= flat.address %></p>
+          <p><i class="fas fa-users"></i><%= flat.number_of_guests %> <i class="fas fa-euro-sign"></i><%= flat.price_per_night %></p>
+        </div>
+        <div class="bg-white">
+        <%= link_to 'More info', flat_path(flat)  %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
